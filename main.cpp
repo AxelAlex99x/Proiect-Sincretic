@@ -4,9 +4,19 @@
 #include <time.h>
 using namespace std;
 
+void resetare(int tabla[8][8])
+{
+    int i,j;
+     for(int i = 0; i < 8; i++)
+        for(int j = 0; j < 8; j++)
+            tabla[i][j] = 0;
+}
+
 void plasare(int tabla[8][8])
 {
     int i,c;
+
+    resetare(tabla);
 
     srand(time(NULL));
 

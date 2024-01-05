@@ -4,6 +4,17 @@
 #include <time.h>
 using namespace std;
 
+bool verificare(int tabla[8][8], int c)
+{ 
+    int i;
+    for(i=0;i<8;i++)
+    {
+        if(tabla[i][c]==1)
+            return false;
+    }
+    return true;
+}
+
 void resetare(int tabla[8][8])
 {
     int i,j;
@@ -23,6 +34,10 @@ void plasare(int tabla[8][8])
     for(i=0;i<8;i++)
     {
             c=rand()%8;
+            while(!verificare(tabla,c))
+            {
+                c=rand()%8;
+            }
             tabla[i][c]=1;
     }
 

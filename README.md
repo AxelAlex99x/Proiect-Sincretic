@@ -8,7 +8,7 @@ Programul contine urmatoarele functii:
 
 - Functia de plasare, care dupa resetarea tablei de sah, parcurge linie cu linie matricea, generand aleator o pozitie pe coloana, apoi verifica daca mai exista un alt turn pe acea coloana, in caz afirmativ, va genera o alta pozitie pe coloana, iar in caz contrar, va plasa turnul pe pozitia respectiva.
 
-- Functia de afisare, care permite utilizatorului, prin mesajul aparut de a apasa tasta ENTER pentru a genera sau ESC pentru a iesi din program. Dupa detectarea apasarii tastei ENTER, se apeleaza functia plasare, se parcurge matricea, verificand daca pozitia curenta este ocupata afisand in aceasta situatie 'T', in rest afisand 0.  
+- Functia de afisare, care permite utilizatorului, prin mesajul aparut de a introduce caracterul 'G' pentru a genera sau 'X' pentru a iesi din program. Dupa introducerea caracterului 'G', se apeleaza functia plasare, se parcurge matricea, verificand daca pozitia curenta este ocupata afisand in aceasta situatie 'T', in rest afisand 0.  
 
 
 Precizez faptul ca, generarea aleatorie a turnurilor, se realizeaza cu ajutorul functiei'srand(time(NULL))', iar pentru stabilirea coloanei 'rand()%8'. 

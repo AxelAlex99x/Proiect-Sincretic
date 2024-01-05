@@ -1,5 +1,4 @@
 #include <iostream>
-#include<conio.h>
 #include <cstdlib>
 #include <time.h>
 using namespace std;
@@ -45,13 +44,16 @@ void plasare(int tabla[8][8])
 
 void afisare(int tabla[8][8])
 {
-    char opt,i,j;
+    char opt;
+    int i,j;
     do{
         
-        cout<<"Apasati tasta ENTER pentru a genera sau ESC pentru a iesi:"<<endl;
-        opt=_getch();
-        if(opt==13){
-        plasare(tabla);
+        cout<<"Introduceti caracterul 'G' pentru a genera sau 'X' pentru a iesi:"<<endl;
+        cin>>opt;
+        if(opt=='G')
+        {
+           
+            plasare(tabla);
             for(i=0;i<8;i++)
                 {
                     for(j=0;j<8;j++)
@@ -64,7 +66,7 @@ void afisare(int tabla[8][8])
                     cout<<endl; 
                 }
         }
-    }while(opt!=27);
+    }while(opt!='X');
 }
 
 int main()

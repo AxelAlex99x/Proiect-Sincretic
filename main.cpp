@@ -16,7 +16,6 @@ bool verificare(int tabla[8][8], int c)
 
 void resetare(int tabla[8][8])
 {
-    int i,j;
      for(int i = 0; i < 8; i++)
         for(int j = 0; j < 8; j++)
             tabla[i][j] = 0;
